@@ -290,6 +290,7 @@ body.active {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
   .links-screen .links-icon {
+    cursor: pointer;
     margin: 0px 30px;
     width: 360px;
     height: 360px; }
