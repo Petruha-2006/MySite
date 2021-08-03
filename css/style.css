@@ -267,7 +267,7 @@ body.active {
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
-  padding: 30px 100px;
+  padding: 30px 10px;
   background: #1f0626; }
   .links-screen h2 {
     margin-bottom: 3%;
@@ -289,11 +289,14 @@ body.active {
     align-items: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-  .links-screen .links-icon {
+    .links-screen .links-block .icon-cont {
+      margin: 30px 30px;
+      max-width: 196px;
+      height: auto; }
+  .links-screen img {
     cursor: pointer;
-    margin: 0px 30px;
-    width: 360px;
-    height: 360px; }
+    height: 100%;
+    width: 100%; }
 
 @media (max-width: 1700px) {
   .about-me-screen .about-me-container
@@ -339,7 +342,5 @@ body.active {
     display: block; }
   .links-screen h2 {
     font-size: 56px; }
-  .links-screen .links-block .links-icon {
-    margin: 10px 0px;
-    width: 300px;
-    height: 300px; } }
+  .links-screen .links-block .icon-cont {
+    max-width: 130px; } }
