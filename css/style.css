@@ -89,6 +89,18 @@ header.fixed {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif; }
 
+.hello-screen {
+  background-image: url(../image/background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .hello-screen::before {
+    content: '';
+    background: -webkit-gradient(linear, left bottom, left top, from(#1f0626), to(transparent));
+    background: -webkit-linear-gradient(bottom, #1f0626, transparent);
+    background: -o-linear-gradient(bottom, #1f0626, transparent);
+    background: linear-gradient(to top, #1f0626, transparent); }
+
 .wrapper {
   min-height: 100%; }
 
@@ -144,27 +156,6 @@ body.active {
   .hello-screen .explore:hover {
     background: white;
     color: #2b1055; }
-
-.hello-screen .bck {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 100vh;
-  background-image: url(../image/background.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  .hello-screen .bck::before {
-    content: '';
-    background: -webkit-gradient(linear, left bottom, left top, from(#1f0626), to(transparent));
-    background: -webkit-linear-gradient(bottom, #1f0626, transparent);
-    background: -o-linear-gradient(bottom, #1f0626, transparent);
-    background: linear-gradient(to top, #1f0626, transparent);
-    width: 100%;
-    height: 100px;
-    position: absolute;
-    bottom: 0; }
 
 .hello-screen .hello.active {
   display: none; }
@@ -290,7 +281,7 @@ body.active {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
     .links-screen .links-block .icon-cont {
-      margin: 30px 30px;
+      padding: 30px 30px;
       max-width: 196px;
       height: auto; }
   .links-screen img {
@@ -330,6 +321,8 @@ body.active {
       height: auto; } }
 
 @media (max-width: 535px) {
+  .hello-screen-content .hello-contain .hello {
+    font-size: 74px; }
   .about-me-screen .about-me-container .about-me-content .about-me h2 {
     font-size: 56px; }
   .music-screen .music-screen-content {
@@ -340,7 +333,11 @@ body.active {
     display: none; }
   .menu-burger-button {
     display: block; }
-  .links-screen h2 {
-    font-size: 56px; }
-  .links-screen .links-block .icon-cont {
-    max-width: 130px; } }
+  .links-screen {
+    padding: 5px; }
+    .links-screen h2 {
+      font-size: 56px; }
+    .links-screen .links-block .icon-cont {
+      margin: 5px 5px;
+      padding: 0;
+      max-width: 96px; } }
